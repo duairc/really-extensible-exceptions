@@ -1,0 +1,36 @@
+name:           really-extensible-exceptions
+version:        0.1
+synopsis:       Extensible exceptions with multiple inheritance and less boilerplate.
+license:        BSD3
+license-file:   LICENSE
+author:         Shane O'Brien
+maintainer:     shane@duairc.com
+stability:      Experimental
+category:       Control
+cabal-version:  >= 1.6
+build-type:     Simple
+homepage:       http://github.com/duairc/really-extensible-exceptions
+bug-reports:    http://github.com/duairc/really-extensible-exceptions/issues
+description:
+  Extensible exceptions with multiple inheritance and less boilerplate.
+
+extra-source-files:
+  CONTRIBUTORS,
+  LICENSE,
+  README.md
+
+library
+  hs-source-dirs:
+    src
+
+  exposed-modules:
+    Control.Exception.ReallyExtensible
+
+  build-depends:
+    base >= 4.7 && < 5
+
+  ghc-options: -Wall
+
+source-repository head
+  type:     git
+  location: http://github.com/duairc/really-extensible-exceptions
